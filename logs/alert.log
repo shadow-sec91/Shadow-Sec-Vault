@@ -1,0 +1,313 @@
+2025-01-16 16:14:31,732 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 16:14:31,732 - INFO - Starting network scan.
+2025-01-16 16:14:35,708 - INFO - Network scan complete.
+2025-01-16 16:14:35,708 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 16:14 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00054s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.4
+Host is up (0.062s latency).
+MAC Address: E0:2E:0B:33:66:C5 (Intel Corporate)
+Nmap scan report for 192.168.1.12
+Host is up (0.057s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for Galaxy-A05s.home (192.168.1.52)
+Host is up (0.067s latency).
+MAC Address: F2:A8:91:A3:D3:B4 (Unknown)
+Nmap scan report for 192.168.1.173
+Host is up (0.066s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (6 hosts up) scanned in 2.44 seconds
+
+2025-01-16 16:14:35,708 - INFO - Deploying firewalls and security filters.
+2025-01-16 16:14:37,261 - INFO - Firewalls deployed successfully.
+2025-01-16 16:14:37,262 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 16:14:38,765 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 16:14:38,765 - INFO - Backtracing and geolocating IP: 192.168.1.100
+2025-01-16 16:14:39,167 - INFO - WHOIS lookup complete.
+2025-01-16 16:14:39,167 - INFO - 
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+NetRange:       192.168.0.0 - 192.168.255.255
+CIDR:           192.168.0.0/16
+NetName:        PRIVATE-ADDRESS-CBLK-RFC1918-IANA-RESERVED
+NetHandle:      NET-192-168-0-0-1
+Parent:         NET192 (NET-192-0-0-0-0)
+NetType:        IANA Special Use
+OriginAS:       
+Organization:   Internet Assigned Numbers Authority (IANA)
+RegDate:        1994-03-15
+Updated:        2024-05-24
+Comment:        These addresses are in use by many millions of independently operated networks, which might be as small as a single computer connected to a home gateway, and are automatically configured in hundreds of millions of devices.  They are only intended for use within a private context  and traffic that needs to cross the Internet will need to use a different, unique address.
+Comment:        
+Comment:        These addresses can be used by anyone without any need to coordinate with IANA or an Internet registry.  The traffic from these addresses does not come from ICANN or IANA.  We are not the source of activity you may see on logs or in e-mail records.  Please refer to http://www.iana.org/abuse/answers
+Comment:        
+Comment:        These addresses were assigned by the IETF, the organization that develops Internet protocols, in the Best Current Practice document, RFC 1918 which can be found at:
+Comment:        http://datatracker.ietf.org/doc/rfc1918
+Ref:            https://rdap.arin.net/registry/ip/192.168.0.0
+
+
+
+OrgName:        Internet Assigned Numbers Authority
+OrgId:          IANA
+Address:        12025 Waterfront Drive
+Address:        Suite 300
+City:           Los Angeles
+StateProv:      CA
+PostalCode:     90292
+Country:        US
+RegDate:        
+Updated:        2024-05-24
+Ref:            https://rdap.arin.net/registry/entity/IANA
+
+
+OrgTechHandle: IANA-IP-ARIN
+OrgTechName:   ICANN
+OrgTechPhone:  +1-310-301-5820 
+OrgTechEmail:  abuse@iana.org
+OrgTechRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+OrgAbuseHandle: IANA-IP-ARIN
+OrgAbuseName:   ICANN
+OrgAbusePhone:  +1-310-301-5820 
+OrgAbuseEmail:  abuse@iana.org
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+2025-01-16 16:14:39,169 - INFO - GeoIP lookup complete.
+2025-01-16 16:14:39,169 - INFO - GeoIP Country Edition: IP Address not found
+
+2025-01-16 16:14:39,169 - INFO - Monitoring logs for suspicious activity.
+2025-01-16 16:14:39,169 - ERROR - Log file not found!
+2025-01-16 16:14:39,169 - INFO - All defenses deployed. System secure.
+2025-01-16 16:27:03,212 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 16:27:03,212 - INFO - Starting network scan.
+2025-01-16 16:27:09,186 - INFO - Network scan complete.
+2025-01-16 16:27:09,186 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 16:27 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00055s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.4
+Host is up (0.025s latency).
+MAC Address: E0:2E:0B:33:66:C5 (Intel Corporate)
+Nmap scan report for 192.168.1.12
+Host is up (0.019s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.045s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (5 hosts up) scanned in 4.44 seconds
+
+2025-01-16 16:27:09,186 - INFO - Deploying firewalls and security filters.
+2025-01-16 16:27:10,753 - INFO - Firewalls deployed successfully.
+2025-01-16 16:27:10,754 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 16:27:12,257 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 16:27:12,257 - INFO - Backtracing and geolocating IP: 192.168.1.100
+2025-01-16 16:27:12,602 - INFO - WHOIS lookup complete.
+2025-01-16 16:27:12,602 - INFO - 
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+NetRange:       192.168.0.0 - 192.168.255.255
+CIDR:           192.168.0.0/16
+NetName:        PRIVATE-ADDRESS-CBLK-RFC1918-IANA-RESERVED
+NetHandle:      NET-192-168-0-0-1
+Parent:         NET192 (NET-192-0-0-0-0)
+NetType:        IANA Special Use
+OriginAS:       
+Organization:   Internet Assigned Numbers Authority (IANA)
+RegDate:        1994-03-15
+Updated:        2024-05-24
+Comment:        These addresses are in use by many millions of independently operated networks, which might be as small as a single computer connected to a home gateway, and are automatically configured in hundreds of millions of devices.  They are only intended for use within a private context  and traffic that needs to cross the Internet will need to use a different, unique address.
+Comment:        
+Comment:        These addresses can be used by anyone without any need to coordinate with IANA or an Internet registry.  The traffic from these addresses does not come from ICANN or IANA.  We are not the source of activity you may see on logs or in e-mail records.  Please refer to http://www.iana.org/abuse/answers
+Comment:        
+Comment:        These addresses were assigned by the IETF, the organization that develops Internet protocols, in the Best Current Practice document, RFC 1918 which can be found at:
+Comment:        http://datatracker.ietf.org/doc/rfc1918
+Ref:            https://rdap.arin.net/registry/ip/192.168.0.0
+
+
+
+OrgName:        Internet Assigned Numbers Authority
+OrgId:          IANA
+Address:        12025 Waterfront Drive
+Address:        Suite 300
+City:           Los Angeles
+StateProv:      CA
+PostalCode:     90292
+Country:        US
+RegDate:        
+Updated:        2024-05-24
+Ref:            https://rdap.arin.net/registry/entity/IANA
+
+
+OrgTechHandle: IANA-IP-ARIN
+OrgTechName:   ICANN
+OrgTechPhone:  +1-310-301-5820 
+OrgTechEmail:  abuse@iana.org
+OrgTechRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+OrgAbuseHandle: IANA-IP-ARIN
+OrgAbuseName:   ICANN
+OrgAbusePhone:  +1-310-301-5820 
+OrgAbuseEmail:  abuse@iana.org
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+2025-01-16 16:27:12,604 - INFO - GeoIP lookup complete.
+2025-01-16 16:27:12,604 - INFO - GeoIP Country Edition: IP Address not found
+
+2025-01-16 16:27:12,604 - INFO - Monitoring logs for suspicious activity.
+2025-01-16 16:27:12,625 - ERROR - Failed to retrieve logs: 
+2025-01-16 16:27:12,625 - INFO - All defenses deployed. System secure.
+2025-01-16 16:31:35,316 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 16:31:35,316 - INFO - Starting network scan.
+2025-01-16 16:31:41,162 - INFO - Network scan complete.
+2025-01-16 16:31:41,162 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 16:31 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00053s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.4
+Host is up (0.082s latency).
+MAC Address: E0:2E:0B:33:66:C5 (Intel Corporate)
+Nmap scan report for 192.168.1.12
+Host is up (0.058s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for Galaxy-A05s.home (192.168.1.52)
+Host is up (0.080s latency).
+MAC Address: F2:A8:91:A3:D3:B4 (Unknown)
+Nmap scan report for 192.168.1.117
+Host is up (0.10s latency).
+MAC Address: 96:6B:DF:75:F2:05 (Unknown)
+Nmap scan report for 192.168.1.173
+Host is up (0.075s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (7 hosts up) scanned in 4.31 seconds
+
+2025-01-16 16:31:41,162 - INFO - Deploying firewalls and security filters.
+2025-01-16 16:31:42,693 - INFO - Firewalls deployed successfully.
+2025-01-16 16:31:42,693 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 16:31:44,197 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 16:31:44,197 - INFO - Backtracing and geolocating IP: 192.168.1.100
+2025-01-16 16:31:44,567 - INFO - WHOIS lookup complete.
+2025-01-16 16:31:44,567 - INFO - 
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+NetRange:       192.168.0.0 - 192.168.255.255
+CIDR:           192.168.0.0/16
+NetName:        PRIVATE-ADDRESS-CBLK-RFC1918-IANA-RESERVED
+NetHandle:      NET-192-168-0-0-1
+Parent:         NET192 (NET-192-0-0-0-0)
+NetType:        IANA Special Use
+OriginAS:       
+Organization:   Internet Assigned Numbers Authority (IANA)
+RegDate:        1994-03-15
+Updated:        2024-05-24
+Comment:        These addresses are in use by many millions of independently operated networks, which might be as small as a single computer connected to a home gateway, and are automatically configured in hundreds of millions of devices.  They are only intended for use within a private context  and traffic that needs to cross the Internet will need to use a different, unique address.
+Comment:        
+Comment:        These addresses can be used by anyone without any need to coordinate with IANA or an Internet registry.  The traffic from these addresses does not come from ICANN or IANA.  We are not the source of activity you may see on logs or in e-mail records.  Please refer to http://www.iana.org/abuse/answers
+Comment:        
+Comment:        These addresses were assigned by the IETF, the organization that develops Internet protocols, in the Best Current Practice document, RFC 1918 which can be found at:
+Comment:        http://datatracker.ietf.org/doc/rfc1918
+Ref:            https://rdap.arin.net/registry/ip/192.168.0.0
+
+
+
+OrgName:        Internet Assigned Numbers Authority
+OrgId:          IANA
+Address:        12025 Waterfront Drive
+Address:        Suite 300
+City:           Los Angeles
+StateProv:      CA
+PostalCode:     90292
+Country:        US
+RegDate:        
+Updated:        2024-05-24
+Ref:            https://rdap.arin.net/registry/entity/IANA
+
+
+OrgAbuseHandle: IANA-IP-ARIN
+OrgAbuseName:   ICANN
+OrgAbusePhone:  +1-310-301-5820 
+OrgAbuseEmail:  abuse@iana.org
+OrgAbuseRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+OrgTechHandle: IANA-IP-ARIN
+OrgTechName:   ICANN
+OrgTechPhone:  +1-310-301-5820 
+OrgTechEmail:  abuse@iana.org
+OrgTechRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/resources/registry/whois/tou/
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/
+#
+# Copyright 1997-2025, American Registry for Internet Numbers, Ltd.
+#
+
+
+2025-01-16 16:31:44,568 - INFO - GeoIP lookup complete.
+2025-01-16 16:31:44,568 - INFO - GeoIP Country Edition: IP Address not found
+
+2025-01-16 16:31:44,569 - INFO - Monitoring logs for suspicious activity.
+2025-01-16 16:31:44,599 - WARNING - Brute force detected: -- Boot 8ae4e5cbac754c0f89aae8e45e580c3d --
+2025-01-16 16:31:44,599 - WARNING - Brute force detected: Jan 16 16:31:44 shadowsec sudo[13401]:     root : TTY=pts/0 ; PWD=/root/Shadow-Sec-Vault/defensive ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager --output=short '--grep=Failed password'
+2025-01-16 16:31:44,599 - INFO - All defenses deployed. System secure.
