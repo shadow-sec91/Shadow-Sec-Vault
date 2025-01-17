@@ -1,7 +1,6 @@
 import os
 import time
 import subprocess
-import json
 import logging
 
 # Configure logging
@@ -102,29 +101,12 @@ def retaliate_against_ip(ip_address):
         logging.error(f"Error during counter-scan: {e}")
         print(f"[ERROR] Error during counter-scan: {e}")
 
-    # Sending a crafted packet to the attacker (use cautiously)
-    try:
-        result = subprocess.run(
-            ["hping3", "-c", "5", "-S", "-p", "80", ip_address],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
-        )
-        if result.returncode == 0:
-            logging.info("Countermeasure packet sent successfully.")
-            print("[SUCCESS] Countermeasure packet sent.")
-        else:
-            logging.error(f"Failed to send countermeasure packet: {result.stderr.decode()}")
-            print(f"[ERROR] Failed to send countermeasure packet: {result.stderr.decode()}")
-    except Exception as e:
-        logging.error(f"Error sending countermeasure packet: {e}")
-        print(f"[ERROR] Error sending countermeasure packet: {e}")
-
 # Function to gather intelligence on an IP
 def gather_intelligence(ip_address):
     print(f"Gathering intelligence on {ip_address}...")
     try:
         result = subprocess.run(
-            ["theharvester", "-d", ip_address, "-b", "all"],
+            ["theHarvester", "-d", ip_address, "-b", "all"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )

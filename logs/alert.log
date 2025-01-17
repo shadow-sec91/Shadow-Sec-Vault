@@ -311,3 +311,438 @@ OrgTechRef:    https://rdap.arin.net/registry/entity/IANA-IP-ARIN
 2025-01-16 16:31:44,599 - WARNING - Brute force detected: -- Boot 8ae4e5cbac754c0f89aae8e45e580c3d --
 2025-01-16 16:31:44,599 - WARNING - Brute force detected: Jan 16 16:31:44 shadowsec sudo[13401]:     root : TTY=pts/0 ; PWD=/root/Shadow-Sec-Vault/defensive ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager --output=short '--grep=Failed password'
 2025-01-16 16:31:44,599 - INFO - All defenses deployed. System secure.
+2025-01-16 17:29:55,755 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 17:29:55,755 - INFO - Starting network scan.
+2025-01-16 17:29:59,471 - INFO - Network scan complete.
+2025-01-16 17:29:59,471 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:29 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00066s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.090s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for Galaxy-A05s.home (192.168.1.52)
+Host is up (0.038s latency).
+MAC Address: F2:A8:91:A3:D3:B4 (Unknown)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.067s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (5 hosts up) scanned in 2.18 seconds
+
+2025-01-16 17:29:59,471 - INFO - Deploying firewalls and security filters.
+2025-01-16 17:30:01,005 - INFO - Firewalls deployed successfully.
+2025-01-16 17:30:01,005 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 17:30:02,509 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 17:30:02,509 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-16 17:30:04,098 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:30 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.55 seconds
+
+2025-01-16 17:30:04,099 - ERROR - Error sending countermeasure packet: [Errno 2] No such file or directory: 'hping3'
+2025-01-16 17:30:04,104 - INFO - Intrusion analysis completed successfully.
+2025-01-16 17:30:04,104 - INFO - ┏━([1;31mMessage from Kali developers[00m)
+┃
+┃ The command theharvester is deprecated. Please use theHarvester instead.
+┃
+┗━
+
+2025-01-16 17:30:04,104 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-16 17:30:04,105 - INFO - Honeypot started on port 5555.
+2025-01-16 17:30:04,105 - ERROR - Error sending active defense packets: [Errno 2] No such file or directory: 'hping3'
+2025-01-16 17:30:04,105 - INFO - All defenses deployed. System secure.
+2025-01-16 17:31:04,770 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 17:31:04,770 - INFO - Starting network scan.
+2025-01-16 17:31:08,886 - INFO - Network scan complete.
+2025-01-16 17:31:08,886 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:31 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00082s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.073s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for Galaxy-A05s.home (192.168.1.52)
+Host is up (0.12s latency).
+MAC Address: F2:A8:91:A3:D3:B4 (Unknown)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.12s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (5 hosts up) scanned in 2.59 seconds
+
+2025-01-16 17:31:08,886 - INFO - Deploying firewalls and security filters.
+2025-01-16 17:31:10,458 - INFO - Firewalls deployed successfully.
+2025-01-16 17:31:10,458 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 17:31:11,961 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 17:31:11,961 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-16 17:31:13,550 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:31 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.55 seconds
+
+2025-01-16 17:31:18,621 - ERROR - Failed to send countermeasure packet: 
+--- 192.168.1.100 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+
+2025-01-16 17:31:18,626 - INFO - Intrusion analysis completed successfully.
+2025-01-16 17:31:18,626 - INFO - ┏━([1;31mMessage from Kali developers[00m)
+┃
+┃ The command theharvester is deprecated. Please use theHarvester instead.
+┃
+┗━
+
+2025-01-16 17:31:18,626 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-16 17:31:18,626 - INFO - Honeypot started on port 5555.
+2025-01-16 17:31:21,698 - INFO - Active defense packets sent.
+2025-01-16 17:31:21,698 - INFO - All defenses deployed. System secure.
+2025-01-16 17:32:53,216 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 17:32:53,217 - INFO - Starting network scan.
+2025-01-16 17:32:57,026 - INFO - Network scan complete.
+2025-01-16 17:32:57,026 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:32 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00057s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.058s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.14s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (4 hosts up) scanned in 2.27 seconds
+
+2025-01-16 17:32:57,026 - INFO - Deploying firewalls and security filters.
+2025-01-16 17:32:58,561 - INFO - Firewalls deployed successfully.
+2025-01-16 17:32:58,561 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 17:33:00,064 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 17:33:00,065 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-16 17:33:01,671 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 17:33 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.55 seconds
+
+2025-01-16 17:33:50,210 - INFO - Intrusion analysis completed successfully.
+2025-01-16 17:33:50,210 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Created default api-keys.yaml at /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Anubis. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Hackertarget. 
+Sitedossier module has triggered a captcha on first iteration, no results can be found.
+Change IPs, manually solve the captcha, or wait before rerunning Sitedossier module
+[94m[*] Searching Sitedossier. 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Subdomaincenter. 
+[94m[*] Searching Subdomainfinderc99. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+[94m[*] Searching CRTsh. 
+An exception has occurred: 429, message='Attempt to decode JSON with unexpected mimetype: text/html', url='https://urlscan.io/api/v1/search/?q=domain:192.168.1.100'
+[94m[*] Searching Yahoo. 
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] No IPs found.
+
+[*] Emails found: 4
+----------------------
+100@192.168.1.100
+7070@192.168.1.100
+me@192.168.1.100
+root@192.168.1.100
+
+[*] Hosts found: 1
+---------------------
+ip.192.168.1.100
+
+2025-01-16 17:33:50,210 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-16 17:33:50,211 - INFO - Honeypot started on port 5555.
+2025-01-16 17:33:53,286 - INFO - Active defense packets sent.
+2025-01-16 17:33:53,286 - INFO - All defenses deployed. System secure.
+2025-01-16 19:09:28,126 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-16 19:09:28,126 - INFO - Starting network scan.
+2025-01-16 19:09:32,012 - INFO - Network scan complete.
+2025-01-16 19:09:32,012 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 19:09 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.00061s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.051s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.14s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.226
+Host is up.
+Nmap done: 256 IP addresses (4 hosts up) scanned in 2.36 seconds
+
+2025-01-16 19:09:32,012 - INFO - Deploying firewalls and security filters.
+2025-01-16 19:09:33,543 - INFO - Firewalls deployed successfully.
+2025-01-16 19:09:33,543 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-16 19:09:35,047 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-16 19:09:35,047 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-16 19:09:36,652 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-16 19:09 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.56 seconds
+
+2025-01-16 19:10:15,415 - INFO - Intrusion analysis completed successfully.
+2025-01-16 19:10:15,415 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+[94m[*] Searching Anubis. 
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching CRTsh. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Hackertarget. 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Subdomaincenter. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+[94m[*] Searching Subdomainfinderc99. 
+[94m[*] Searching Urlscan. 
+[94m[*] Searching Yahoo. 
+
+[*] ASNS found: 14
+--------------------
+AS13335
+AS135868
+AS15169
+AS15542
+AS16509
+AS1680
+AS20845
+AS3215
+AS3352
+AS34984
+AS45102
+AS47583
+AS4773
+AS58461
+
+[*] Interesting Urls found: 15
+--------------------
+http://192.168.1.100/
+http://192.168.1.100/#/config
+http://192.168.1.100//malicious
+http://192.168.1.100/?2869/upnp/eventing/zmdtvlixpl
+http://192.168.1.100/payload.exe
+http://192.168.1.100:3000/
+http://192.168.1.100:3764/
+http://192.168.1.100:443/
+http://192.168.1.100:5173/
+http://192.168.1.100:51975/
+http://192.168.1.100:62177/
+http://192.168.1.100:8080/
+http://192.168.1.100:8080/EERPV3.0/index1.jsp
+http://192.168.1.100:8443/
+https://192.168.1.100/
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] IPs found: 19
+-------------------
+103.76.249.137
+104.16.151.108
+176.236.118.2
+212.40.88.30
+2a02:4780:27:1148:0:1587:c80c:2
+2a02:4780:84:25ba:18cf:3fdf:a3a8:f7bf
+35.214.170.138
+36.25.243.8
+47.236.106.130
+47.236.62.78
+49.245.31.16
+62.238.170.193
+76.76.21.98
+8.223.112.218
+8.223.61.105
+8.223.66.108
+83.53.248.238
+85.64.152.210
+90.66.5.106
+
+[*] Emails found: 8
+----------------------
+100@192.168.1.100
+7070@192.168.1.100
+jim@192.168.1.100
+me@192.168.1.100
+passwd@192.168.1.100
+root@192.168.1.100
+sshomd@192.168.1.100
+
+[*] Hosts found: 1
+---------------------
+ip.192.168.1.100
+
+2025-01-16 19:10:15,415 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-16 19:10:15,415 - INFO - Honeypot started on port 5555.
+2025-01-16 19:10:18,499 - INFO - Active defense packets sent.
+2025-01-16 19:10:18,499 - INFO - All defenses deployed. System secure.
