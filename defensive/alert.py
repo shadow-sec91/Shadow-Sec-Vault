@@ -79,27 +79,30 @@ def isolate_ip(ip_address):
         logging.error(f"Error isolating IP {ip_address}: {e}")
         print(f"[ERROR] Error isolating IP {ip_address}: {e}")
 
-# Function to retaliate against an IP
-def retaliate_against_ip(ip_address):
-    print(f"Deploying countermeasures against {ip_address}...")
-    logging.info(f"Initiating countermeasures against {ip_address}")
+# Function to deploy counter-attack payloads against an IP
+def deploy_counter_attack_payloads(ip_address):
+    print(f"Deploying counter-attack payloads against {ip_address}...")
+    logging.info(f"Deploying counter-attack payloads against {ip_address}")
 
-    # Example: Perform a deeper network scan against the attacker
     try:
-        result = subprocess.run(
-            ["nmap", "-sS", "-O", ip_address],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
-        )
-        if result.returncode == 0:
-            logging.info(f"Counter-scan completed: {result.stdout.decode()}")
-            print(result.stdout.decode())
-        else:
-            logging.error(f"Counter-scan failed: {result.stderr.decode()}")
-            print(f"[ERROR] Counter-scan failed: {result.stderr.decode()}")
+        # Example: Deploying a signal jammer (disabling network connection)
+        subprocess.run(["hping3", "-c", "5", "-p", "80", "-S", ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        logging.info(f"Signal jammer deployed against {ip_address}")
+        print("[SUCCESS] Signal jammer deployed.\n")
+
+        # Example: Data disruption (scrambling or blocking data exfiltration)
+        subprocess.run(["nmap", "-sS", "-O", ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        logging.info(f"Data disruption payload deployed against {ip_address}")
+        print("[SUCCESS] Data disruption payload deployed.\n")
+
+        # Example: Fake endpoint (honeypot to mislead attacker)
+        subprocess.Popen(["nc", "-l", "5555"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        logging.info(f"Honeypot started on port 5555 for {ip_address}.")
+        print("[SUCCESS] Honeypot activated.\n")
+
     except Exception as e:
-        logging.error(f"Error during counter-scan: {e}")
-        print(f"[ERROR] Error during counter-scan: {e}")
+        logging.error(f"Error deploying counter-attack payloads: {e}")
+        print(f"[ERROR] Error deploying counter-attack payloads: {e}")
 
 # Function to gather intelligence on an IP
 def gather_intelligence(ip_address):
@@ -156,7 +159,7 @@ if __name__ == "__main__":
     scan_network()
     deploy_firewalls()
     isolate_ip(suspicious_ip)
-    retaliate_against_ip(suspicious_ip)
+    deploy_counter_attack_payloads(suspicious_ip)
     gather_intelligence(suspicious_ip)
     deploy_active_defense(suspicious_ip)
 
