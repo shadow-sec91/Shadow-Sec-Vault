@@ -1,0 +1,62 @@
+2025-01-21 13:02:38,935 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:02:39,982 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//192.168.1.100/ HTTP/1.1" 404 None
+2025-01-21 13:02:39,983 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:02:40,958 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//example.com/malicious HTTP/1.1" 404 None
+2025-01-21 13:02:40,960 - Starting new HTTP connection (1): ip-api.com:80
+2025-01-21 13:02:41,573 - http://ip-api.com:80 "GET /json/192.168.1.5 HTTP/1.1" 200 65
+2025-01-21 13:03:51,215 - Alert triggered for IP: 192.168.1.100
+2025-01-21 13:03:51,215 - Outbound traffic detected from IP 192.168.1.100: 150000 bytes
+2025-01-21 13:03:53,444 - Alert triggered for IP: 192.168.1.101
+2025-01-21 13:03:53,445 - Outbound traffic detected from IP 192.168.1.101: 150000 bytes
+2025-01-21 13:03:54,485 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:03:55,610 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//192.168.1.100/ HTTP/1.1" 404 None
+2025-01-21 13:03:55,611 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:03:56,631 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//example.com/malicious HTTP/1.1" 404 None
+2025-01-21 13:03:56,632 - Starting new HTTP connection (1): ip-api.com:80
+2025-01-21 13:04:13,817 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:04:14,349 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//192.168.1.100/ HTTP/1.1" 404 None
+2025-01-21 13:04:14,350 - Starting new HTTPS connection (1): www.virustotal.com:443
+2025-01-21 13:04:14,759 - https://www.virustotal.com:443 "GET /api/v3/urls/http%3A//example.com/malicious HTTP/1.1" 404 None
+2025-01-21 13:04:14,760 - Starting new HTTP connection (1): ip-api.com:80
+2025-01-21 13:04:14,963 - http://ip-api.com:80 "GET /json/192.168.1.5 HTTP/1.1" 200 65
+2025-01-22 08:57:24,778 - Starting new HTTPS connection (1): api.abuseipdb.com:443
+2025-01-22 08:57:30,339 - https://api.abuseipdb.com:443 "GET /api/v2/blacklist HTTP/1.1" 401 None
+2025-01-22 08:57:30,339 - Failed to update threat feeds: 'data'
+2025-01-22 09:00:35,002 - Starting new HTTPS connection (1): api.abuseipdb.com:443
+2025-01-22 09:00:35,832 - https://api.abuseipdb.com:443 "GET /api/v2/blacklist HTTP/1.1" 401 None
+2025-01-22 09:00:35,833 - Failed to update threat feeds: 'data'
+2025-01-22 09:07:28,606 - Starting new HTTPS connection (1): api.abuseipdb.com:443
+2025-01-22 09:07:29,211 - https://api.abuseipdb.com:443 "GET /api/v2/blacklist HTTP/1.1" 401 None
+2025-01-22 09:07:29,313 - Failed to update threat feeds: 'data'
+2025-01-22 09:16:20,843 - Starting new HTTPS connection (1): api.abuseipdb.com:443
+2025-01-22 09:16:21,504 - https://api.abuseipdb.com:443 "GET /api/v2/blacklist HTTP/1.1" 401 None
+2025-01-22 09:16:21,504 - Failed to update threat feeds: 'data'
+2025-01-22 09:32:24,176 - MAC address changed: f6:bf:d5:0a:43:51
+2025-01-22 09:32:32,472 - IP address changed: 192.168.0.102/24
+2025-01-22 09:39:22,117 - [INFO] Firewalls deployed successfully.
+2025-01-22 09:39:55,610 - [INFO] Firewalls deployed successfully.
+2025-01-22 09:44:05,817 - [INFO] Firewalls deployed successfully.
+2025-01-22 09:44:09,987 - Failed to retrieve MAC address for proton0.
+2025-01-22 09:44:11,159 - IP address changed: 10.2.0.2/32
+2025-01-22 09:48:34,229 - [INFO] Firewalls deployed successfully.
+2025-01-22 09:48:39,761 - MAC address changed: ea:0b:27:86:a4:77
+2025-01-22 09:48:55,065 - IP address changed: 192.168.0.107/24
+2025-01-22 10:00:59,845 - [INFO] Firewalls deployed successfully.
+2025-01-22 10:01:02,692 - MAC address changed: 26:5a:6a:50:55:1a
+2025-01-22 10:02:04,056 - Failed to change IP address for wlan0.
+2025-01-22 10:06:57,801 - [INFO] Firewalls deployed successfully.
+2025-01-22 10:07:00,676 - MAC address changed: aa:28:30:75:9a:c1
+2025-01-22 10:07:14,728 - IP address changed: 192.168.0.111/24
+2025-01-22 10:22:17,717 - [INFO] Firewalls deployed successfully.
+2025-01-22 10:27:11,673 - [INFO] Firewalls deployed successfully.
+2025-01-22 10:27:14,254 - MAC address changed: d2:db:08:40:af:2e
+2025-01-22 10:27:27,129 - IP address changed: 192.168.0.112/24
+2025-01-22 10:27:27,130 - Interface wlan0 is up and operational.
+2025-01-22 10:55:47,077 - [INFO] Firewalls deployed successfully.
+2025-01-22 10:55:55,941 - MAC address changed: fa:84:5c:03:82:7f
+2025-01-22 10:56:08,140 - IP address changed: 192.168.0.113/24
+2025-01-22 10:56:08,141 - Interface wlan0 is up and operational.
+2025-01-22 12:16:12,301 - [INFO] Firewalls deployed successfully.
+2025-01-22 12:16:15,443 - MAC address changed: 72:d0:9b:82:4b:6d
+2025-01-22 12:17:17,352 - IP address changed: 192.168.0.102/24
+2025-01-22 12:17:17,353 - Interface wlan0 is up and operational.

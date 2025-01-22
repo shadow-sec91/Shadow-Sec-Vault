@@ -950,3 +950,946 @@ ip.192.168.1.100
 2025-01-18 13:32:00,759 - INFO - Honeypot started on port 5555.
 2025-01-18 13:32:03,844 - INFO - Active defense packets sent.
 2025-01-18 13:32:03,844 - INFO - All defenses deployed. System secure.
+2025-01-18 15:36:57,123 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-18 15:36:57,123 - INFO - Starting network scan.
+2025-01-18 15:37:02,321 - INFO - Network scan complete.
+2025-01-18 15:37:02,321 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-18 15:36 GMT
+Nmap scan report for home (192.168.1.1)
+Host is up (0.050s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.19s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for LGwebOSTV.home (192.168.1.173)
+Host is up (0.12s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for Galaxy-J4.home (192.168.1.181)
+Host is up (0.18s latency).
+MAC Address: D0:7F:A0:E2:D0:C5 (Samsung Electronics)
+Nmap scan report for 192.168.1.199
+Host is up (0.10s latency).
+MAC Address: 0E:18:A4:7A:F3:FF (Unknown)
+Nmap scan report for shadowsec.home (192.168.1.26)
+Host is up.
+Nmap done: 256 IP addresses (6 hosts up) scanned in 3.66 seconds
+
+2025-01-18 15:37:02,322 - INFO - Deploying firewalls and security filters.
+2025-01-18 15:37:03,868 - INFO - Firewalls deployed successfully.
+2025-01-18 15:37:03,868 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-18 15:37:05,372 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-18 15:37:05,372 - INFO - Deploying counter-attack payloads against 192.168.1.100
+2025-01-18 15:37:10,461 - INFO - Signal jammer deployed against 192.168.1.100
+2025-01-18 15:37:12,065 - INFO - Data disruption payload deployed against 192.168.1.100
+2025-01-18 15:37:12,066 - INFO - Honeypot started on port 5555 for 192.168.1.100.
+2025-01-18 15:37:51,682 - INFO - Intrusion analysis completed successfully.
+2025-01-18 15:37:51,682 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+[94m[*] Searching Anubis. 
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching CRTsh. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Hackertarget. 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Subdomaincenter. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+[94m[*] Searching Urlscan. 
+[94m[*] Searching Subdomainfinderc99. 
+[94m[*] Searching Yahoo. 
+
+[*] ASNS found: 13
+--------------------
+AS13335
+AS135868
+AS15169
+AS15542
+AS16509
+AS1680
+AS3215
+AS3352
+AS34984
+AS45102
+AS47583
+AS4773
+AS58461
+
+[*] Interesting Urls found: 15
+--------------------
+http://192.168.1.100/
+http://192.168.1.100/#/config
+http://192.168.1.100//malicious
+http://192.168.1.100/?2869/upnp/eventing/zmdtvlixpl
+http://192.168.1.100/payload.exe
+http://192.168.1.100:3000/
+http://192.168.1.100:3764/
+http://192.168.1.100:443/
+http://192.168.1.100:5173/
+http://192.168.1.100:51975/
+http://192.168.1.100:62177/
+http://192.168.1.100:8080/
+http://192.168.1.100:8080/EERPV3.0/index1.jsp
+http://192.168.1.100:8443/
+https://192.168.1.100/
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] IPs found: 18
+-------------------
+103.76.249.137
+104.16.151.108
+176.236.118.2
+2a02:4780:27:1148:0:1587:c80c:2
+2a02:4780:84:25ba:18cf:3fdf:a3a8:f7bf
+35.214.170.138
+36.25.243.8
+47.236.106.130
+47.236.62.78
+49.245.31.16
+62.238.170.193
+76.76.21.98
+8.223.112.218
+8.223.61.105
+8.223.66.108
+83.53.248.238
+85.64.152.210
+90.66.5.106
+
+[*] Emails found: 5
+----------------------
+0000@192.168.1.100
+100@192.168.1.100
+7070@192.168.1.100
+me@192.168.1.100
+
+[*] Hosts found: 2
+---------------------
+IP.192.168.1.100
+ip.192.168.1.100
+
+2025-01-18 15:37:51,682 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-18 15:37:51,682 - INFO - Honeypot started on port 5555.
+2025-01-18 15:37:54,752 - INFO - Active defense packets sent.
+2025-01-18 15:37:54,752 - INFO - All defenses deployed. System secure.
+2025-01-18 15:43:56,925 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-18 15:43:56,925 - INFO - Starting network scan.
+2025-01-18 15:44:02,892 - INFO - Network scan complete.
+2025-01-18 15:44:02,892 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-18 15:43 GMT
+Nmap scan report for 192.168.1.1
+Host is up (0.060s latency).
+MAC Address: 78:C5:7D:12:DD:E4 (Zyxel Communications)
+Nmap scan report for 192.168.1.12
+Host is up (0.12s latency).
+MAC Address: 7C:63:05:B0:BC:9B (Amazon Technologies)
+Nmap scan report for 192.168.1.117
+Host is up (0.16s latency).
+MAC Address: 96:6B:DF:75:F2:05 (Unknown)
+Nmap scan report for 192.168.1.173
+Host is up (0.091s latency).
+MAC Address: 60:AB:14:8B:BE:D6 (LG Innotek)
+Nmap scan report for 192.168.1.181
+Host is up (0.16s latency).
+MAC Address: D0:7F:A0:E2:D0:C5 (Samsung Electronics)
+Nmap scan report for 192.168.1.199
+Host is up (0.074s latency).
+MAC Address: 0E:18:A4:7A:F3:FF (Unknown)
+Nmap scan report for 192.168.1.26
+Host is up.
+Nmap done: 256 IP addresses (7 hosts up) scanned in 4.43 seconds
+
+2025-01-18 15:44:02,892 - INFO - Deploying firewalls and security filters.
+2025-01-18 15:44:04,432 - INFO - Firewalls deployed successfully.
+2025-01-18 15:44:04,432 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-18 15:44:05,936 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-18 15:44:05,936 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-18 15:44:07,545 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-18 15:44 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.57 seconds
+
+2025-01-18 15:44:56,661 - INFO - Intrusion analysis completed successfully.
+2025-01-18 15:44:56,661 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+[94m[*] Searching Anubis. 
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching CRTsh. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Hackertarget. 
+Sitedossier module has triggered a captcha on first iteration, no results can be found.
+Change IPs, manually solve the captcha, or wait before rerunning Sitedossier module
+[94m[*] Searching Sitedossier. 
+[94m[*] Searching Subdomaincenter. 
+[94m[*] Searching Rapiddns. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+[94m[*] Searching Urlscan. 
+[94m[*] Searching Subdomainfinderc99. 
+[94m[*] Searching Yahoo. 
+
+[*] ASNS found: 13
+--------------------
+AS13335
+AS135868
+AS15169
+AS15542
+AS16509
+AS1680
+AS3215
+AS3352
+AS34984
+AS45102
+AS47583
+AS4773
+AS58461
+
+[*] Interesting Urls found: 15
+--------------------
+http://192.168.1.100/
+http://192.168.1.100/#/config
+http://192.168.1.100//malicious
+http://192.168.1.100/?2869/upnp/eventing/zmdtvlixpl
+http://192.168.1.100/payload.exe
+http://192.168.1.100:3000/
+http://192.168.1.100:3764/
+http://192.168.1.100:443/
+http://192.168.1.100:5173/
+http://192.168.1.100:51975/
+http://192.168.1.100:62177/
+http://192.168.1.100:8080/
+http://192.168.1.100:8080/EERPV3.0/index1.jsp
+http://192.168.1.100:8443/
+https://192.168.1.100/
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] IPs found: 18
+-------------------
+103.76.249.137
+104.16.151.108
+176.236.118.2
+2a02:4780:27:1148:0:1587:c80c:2
+2a02:4780:84:25ba:18cf:3fdf:a3a8:f7bf
+35.214.170.138
+36.25.243.8
+47.236.106.130
+47.236.62.78
+49.245.31.16
+62.238.170.193
+76.76.21.98
+8.223.112.218
+8.223.61.105
+8.223.66.108
+83.53.248.238
+85.64.152.210
+90.66.5.106
+
+[*] Emails found: 1
+----------------------
+0000@192.168.1.100
+
+[*] No hosts found.
+
+
+
+2025-01-18 15:44:56,661 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-18 15:44:56,662 - INFO - Honeypot started on port 5555.
+2025-01-18 15:44:59,728 - INFO - Active defense packets sent.
+2025-01-18 15:44:59,729 - INFO - Deploying backdoor on 192.168.1.100
+2025-01-18 15:44:59,745 - INFO - Backdoor script deployed to 192.168.1.100.
+2025-01-18 15:45:02,818 - INFO - Backdoor executed successfully on 192.168.1.100.
+2025-01-18 16:07:09,479 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-18 16:07:09,479 - INFO - Starting network scan.
+2025-01-18 16:08:01,818 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-18 16:08:01,818 - INFO - Starting network scan.
+2025-01-18 16:11:29,613 - INFO - Network scan complete.
+2025-01-18 16:11:29,613 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-18 16:08 GMT
+Nmap done: 256 IP addresses (0 hosts up) scanned in 206.29 seconds
+
+2025-01-18 16:11:29,613 - INFO - Deploying firewalls and security filters.
+2025-01-18 16:11:31,172 - INFO - Firewalls deployed successfully.
+2025-01-18 16:11:31,173 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-18 16:11:32,676 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-18 16:11:32,676 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-18 16:11:35,846 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-18 16:11 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.15 seconds
+
+2025-01-18 16:12:23,334 - INFO - Intrusion analysis completed successfully.
+2025-01-18 16:12:23,334 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+[94m[*] Searching Anubis. 
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching CRTsh. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Hackertarget. 
+[94m[*] Searching Rapiddns. 
+Sitedossier module has triggered a captcha on first iteration, no results can be found.
+Change IPs, manually solve the captcha, or wait before rerunning Sitedossier module
+[94m[*] Searching Sitedossier. 
+[94m[*] Searching Subdomaincenter. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+An exception has occurred: 429, message='Attempt to decode JSON with unexpected mimetype: text/html', url='https://urlscan.io/api/v1/search/?q=domain:192.168.1.100'
+[94m[*] Searching Subdomainfinderc99. 
+[94m[*] Searching Yahoo. 
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] No IPs found.
+
+[*] Emails found: 1
+----------------------
+0000@192.168.1.100
+
+[*] No hosts found.
+
+
+
+2025-01-18 16:12:23,335 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-18 16:12:23,335 - INFO - Honeypot started on port 5555.
+2025-01-18 16:12:26,413 - INFO - Active defense packets sent.
+2025-01-18 16:12:26,413 - INFO - Deploying backdoor on 192.168.1.100
+2025-01-18 16:14:40,322 - INFO - Backdoor script deployed to 192.168.1.100.
+2025-01-18 16:16:55,489 - INFO - Backdoor executed successfully on 192.168.1.100.
+2025-01-21 13:02:41,651 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-21 13:02:41,651 - INFO - Starting network scan.
+2025-01-21 13:03:51,285 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-21 13:03:51,285 - INFO - Starting network scan.
+2025-01-21 13:04:15,046 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-21 13:04:15,046 - INFO - Starting network scan.
+2025-01-21 13:04:23,417 - INFO - Network scan complete.
+2025-01-21 13:04:23,417 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-21 13:04 GMT
+Nmap done: 256 IP addresses (0 hosts up) scanned in 6.86 seconds
+
+2025-01-21 13:04:23,417 - INFO - Deploying firewalls and security filters.
+2025-01-21 13:04:24,952 - INFO - Firewalls deployed successfully.
+2025-01-21 13:04:24,952 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-21 13:04:26,455 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-21 13:04:26,455 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-21 13:04:27,868 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-21 13:04 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 1.39 seconds
+
+2025-01-21 13:05:50,215 - INFO - Intrusion analysis completed successfully.
+2025-01-21 13:05:50,216 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+[94m[*] Searching Anubis. 
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Baidu. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching CRTsh. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Brave. 
+[94m[*] Searching Hackertarget. 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Subdomaincenter. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+[94m[*] Searching Subdomainfinderc99. 
+[94m[*] Searching Urlscan. 
+[94m[*] Searching Yahoo. 
+An exception has occurred: 
+
+[*] ASNS found: 13
+--------------------
+AS13335
+AS135868
+AS15169
+AS15542
+AS16509
+AS1680
+AS3215
+AS3352
+AS34984
+AS45102
+AS47583
+AS4773
+AS58461
+
+[*] Interesting Urls found: 14
+--------------------
+http://192.168.1.100/
+http://192.168.1.100/#/config
+http://192.168.1.100//malicious
+http://192.168.1.100/?2869/upnp/eventing/zmdtvlixpl
+http://192.168.1.100/payload.exe
+http://192.168.1.100:3000/
+http://192.168.1.100:3764/
+http://192.168.1.100:443/
+http://192.168.1.100:5173/
+http://192.168.1.100:51975/
+http://192.168.1.100:62177/
+http://192.168.1.100:8080/
+http://192.168.1.100:8080/EERPV3.0/index1.jsp
+https://192.168.1.100/
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] IPs found: 18
+-------------------
+103.76.249.137
+104.16.151.108
+176.236.118.2
+2a02:4780:27:1148:0:1587:c80c:2
+2a02:4780:84:25ba:18cf:3fdf:a3a8:f7bf
+35.214.170.138
+36.25.243.8
+47.236.106.130
+47.236.62.78
+49.245.31.16
+62.238.170.193
+76.76.21.98
+8.223.112.218
+8.223.61.105
+8.223.66.108
+83.53.248.238
+85.64.152.210
+90.66.5.106
+
+[*] No emails found.
+
+[*] No hosts found.
+
+
+
+2025-01-21 13:05:50,216 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-21 13:05:50,217 - INFO - Honeypot started on port 5555.
+2025-01-21 13:05:53,289 - INFO - Active defense packets sent.
+2025-01-21 13:05:53,289 - INFO - Deploying backdoor on 192.168.1.100
+2025-01-21 13:08:08,273 - INFO - Backdoor script deployed to 192.168.1.100.
+2025-01-21 13:10:23,441 - INFO - Backdoor executed successfully on 192.168.1.100.
+2025-01-22 10:28:45,332 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-22 10:28:45,333 - INFO - Starting network scan.
+2025-01-22 10:32:13,118 - INFO - Network scan complete.
+2025-01-22 10:32:13,118 - INFO - Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-22 10:28 GMT
+Nmap done: 256 IP addresses (0 hosts up) scanned in 206.28 seconds
+
+2025-01-22 10:32:13,118 - INFO - Deploying firewalls and security filters.
+2025-01-22 10:32:14,681 - INFO - Firewalls deployed successfully.
+2025-01-22 10:32:14,681 - INFO - Isolating malicious IP: 192.168.1.100
+2025-01-22 10:32:16,184 - INFO - Suspicious IP 192.168.1.100 successfully isolated.
+2025-01-22 10:32:16,184 - INFO - Initiating countermeasures against 192.168.1.100
+2025-01-22 10:32:19,370 - INFO - Counter-scan completed: Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-22 10:32 GMT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.17 seconds
+
+2025-01-22 10:35:15,374 - INFO - Intrusion analysis completed successfully.
+2025-01-22 10:35:15,374 - INFO - Read proxies.yaml from /root/.theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.6.0                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: 192.168.1.100 
+
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bevigil. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for binaryedge. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for bufferoverun. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Censys ID and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for criminalip. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for fullhunt. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Github. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Hunter. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for hunterhow. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Intelx. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for netlas. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for onyphe. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for PentestTools. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for ProjectDiscovery. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for RocketReach. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Securitytrail. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for Tomba Key and/or Secret. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for virustotal. [0m
+Read api-keys.yaml from /root/.theHarvester/api-keys.yaml
+
+[93m[!] Missing API key for zoomeye. [0m
+	Searching 0 results.
+[94m[*] Searching Bing. 
+[94m[*] Searching Anubis. 
+	Searching results.
+[94m[*] Searching Certspotter. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+[94m[*] Searching CRTsh. 
+An exception occurred: list index out of range
+[94m[*] Searching Dnsdumpster. 
+[94m[*] Searching Baidu. 
+[94m[*] Searching Duckduckgo. 
+[94m[*] Searching Hackertarget. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: [Errno 104] Connection reset by peer
+[94m[*] Searching Subdomaincenter. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+[94m[*] Searching Subdomainfinderc99. 
+An exception has occurred: 500, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url='https://api.threatminer.org/v2/domain.php?q=192.168.1.100&rt=5'
+An exception has occurred: 
+[94m[*] Searching Rapiddns. 
+[94m[*] Searching Urlscan. 
+[94m[*] Searching Yahoo. 
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+An exception has occurred: 400, message:
+  Can not decode content-encoding: br
+[94m[*] Searching Brave. 
+
+[*] ASNS found: 13
+--------------------
+AS13335
+AS135868
+AS15169
+AS15542
+AS16509
+AS1680
+AS3215
+AS3352
+AS34984
+AS45102
+AS47583
+AS4773
+AS58461
+
+[*] Interesting Urls found: 14
+--------------------
+http://192.168.1.100/
+http://192.168.1.100/#/config
+http://192.168.1.100//malicious
+http://192.168.1.100/?2869/upnp/eventing/zmdtvlixpl
+http://192.168.1.100/payload.exe
+http://192.168.1.100:3000/
+http://192.168.1.100:3764/
+http://192.168.1.100:443/
+http://192.168.1.100:5173/
+http://192.168.1.100:51975/
+http://192.168.1.100:62177/
+http://192.168.1.100:8080/
+http://192.168.1.100:8080/EERPV3.0/index1.jsp
+https://192.168.1.100/
+
+[*] LinkedIn Links found: 0
+---------------------
+
+[*] IPs found: 18
+-------------------
+103.76.249.137
+104.16.151.108
+176.236.118.2
+2a02:4780:27:1148:0:1587:c80c:2
+2a02:4780:84:25ba:18cf:3fdf:a3a8:f7bf
+35.214.170.138
+36.25.243.8
+47.236.106.130
+47.236.62.78
+49.245.31.16
+62.238.170.193
+76.76.21.98
+8.223.112.218
+8.223.61.105
+8.223.66.108
+83.53.248.238
+85.64.152.210
+90.66.5.106
+
+[*] Emails found: 6
+----------------------
+'@192.168.1.100
+0000@192.168.1.100
+ccf@192.168.1.100
+root@192.168.1.100
+sshomd@192.168.1.100
+sshuser@192.168.1.100
+
+[*] Hosts found: 2
+---------------------
+IP.192.168.1.100
+ip.192.168.1.100
+
+2025-01-22 10:35:15,374 - INFO - Deploying active defenses against 192.168.1.100
+2025-01-22 10:35:15,375 - INFO - Honeypot started on port 5555.
+2025-01-22 10:35:18,478 - INFO - Active defense packets sent.
+2025-01-22 10:35:18,478 - INFO - Deploying backdoor on 192.168.1.100
+2025-01-22 10:37:32,950 - INFO - Backdoor script deployed to 192.168.1.100.
+2025-01-22 10:39:48,118 - INFO - Backdoor executed successfully on 192.168.1.100.
+2025-01-22 10:56:30,540 - INFO - Displayed ASCII art for Shadow-Sec.
+2025-01-22 10:56:30,541 - INFO - Starting network scan.
